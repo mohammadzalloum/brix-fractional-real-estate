@@ -1,3 +1,35 @@
-# brix-fractional-real-estate
-Fractional real estate investment dApp — tokenized shares, on-chain ownership &amp; distributions, and DAO governance for decisions and expenses.
-![WhatsApp Image 2025-12-18 at 5 49 31 PM](https://github.com/user-attachments/assets/2c107f5f-6b27-4683-8200-c7e31bb20dab)
+# BRIX (Truffle + Frontend)
+
+هيكلة المشروع (مثل مثال counter):
+
+- `contracts/` عقود Solidity
+- `migrations/` ملفات نشر العقود (Truffle)
+- `test/` اختبارات Truffle
+- `truffle-config.js` إعدادات Truffle
+- `frontend/` مشروع Next.js (الواجهة)
+
+## تشغيل سريع (محلي)
+
+### 1) تشغيل الشبكة المحلية (Ganache)
+داخل مجلد `brix`:
+```bash
+npm install
+npm run chain
+```
+
+### 2) نشر العقود (Truffle)
+بترمينال ثاني داخل مجلد `brix`:
+```bash
+npm run migrate
+```
+
+### 3) تشغيل الواجهة (Next.js)
+داخل مجلد `brix/frontend`:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+بعد خطوة (2) ستجد العناوين مكتوبة تلقائياً هنا:
+`frontend/src/config/deployments/local.json`

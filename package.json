@@ -1,0 +1,21 @@
+{
+  "name": "brix-truffle",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "chain": "npx ganache --wallet.seed \"brix\" --wallet.totalAccounts 10 --chain.chainId 1337 --server.host 127.0.0.1 --server.port 8545",
+    "migrate": "truffle migrate --reset --network development",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "devDependencies": {
+    "ganache": "^7.9.2",
+    "truffle": "^5.11.5",
+    "solc": "0.8.25"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
